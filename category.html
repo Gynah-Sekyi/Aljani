@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:400,500,600&display=swap" rel="stylesheet" />
+
+    <!--Custom Stylesheet-->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Aljani</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-main">
+      <a class="navbar-brand" href="#">.aljani</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link  mx-4" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-4" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-4" href="#">Contact us</a>
+          </li>
+        </ul>
+        <div class="header-right-nav d-flex justify-content-between">
+          <form class="search-form form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="header-icons mr-lg-4">
+            <svg class="header__icon">
+              <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg>
+
+            <div class="header-icon-cart">
+              <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-shopping-cart"></use>
+              </svg>
+              <span class="cart-num"> 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="category-header">
+        <div class="row d-flex">
+            <!-- <div class="col-lg-12"> -->
+                <div class="col-lg-6 category-bg-1">
+                    <div class="category-header-textbox category-texbox-2">
+                        <h2 class="heading-category">
+                            <span class="d-block"> Slipper Collection</span>
+                            <span class="hot-sale">&mdash; Hot Sale</span>
+                        </h2>
+                        <a href="#" role="button" class="btn btn-primary mt-small">See More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 category-bg-2">
+                    <div class="category-header-textbox category-texbox-1">
+                        <h2 class="heading-category ">
+                            <span class="d-block">Kids Collection</span> 
+                            <span class="hot-sale">&mdash; Hot Sale</span>
+                        </h2>
+                        <a href="#" role="button" class="btn btn-primary mt-small">See More</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="category-nav ">
+            <div class="row justify-content-between">
+                <nav aria-label="breadcrumb category-nav__bread">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item"><a href="#" class="color-dark">Home</a></li>
+                        <li class="breadcrumb-item active color-primary" aria-current="page">Category</li>
+                    </ol>
+                </nav>
+                <div class="category-orientation d-flex align-items-center">
+                    <div class="category-nav__iconbox active">
+                        <span class="mr-3 category-nav__text ">Grid</span>
+                        <svg class="category-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-list"></use>
+                        </svg>
+                    </div>
+
+                    <div class="category-nav__iconbox">
+                        <span class="mr-3 category-nav__text ">List</span>
+                        <svg class="category-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-list"></use>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="category-content">
+            <div class="row">
+                <div class="col-lg-3 px-medium my-huge">
+                    <div class="category-content__info mb-5">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active bg-dark">
+                                Categories
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                    <div class="category-content__info mb-5">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active bg-dark">
+                                Price
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                    <div class="category-content__info mb-5">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active bg-dark">
+                                Color
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                    <div class="category-content__info mb-5">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active bg-dark">
+                                Size
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                            <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <section class="products my-huge">
+                            <nav class="nav products__nav justify-content-center">
+                                <h1 class="nav-link category-content_header" href="#">FootWear Collection</h1>
+                                <!-- <form class="search-form form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search for item" aria-label="Search" />
+                                    <button class="btn my-2 my-sm-0" type="submit">
+                                        <svg class="search__icon">
+                                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                                        </svg>
+                                    </button>
+                                </form> -->
+                            </nav>
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-lg-12 ">
+                                    <div class="product__list my-large d-lg-flex flex-wrap">
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/boots 1.jpg" alt="Heels" class="product__content-img" />
+                                        <div class="product-icon-cart">
+                                            <!-- <svg class="header__icon">
+                                                <use xlink:href="img/sprite.svg#icon-add_shopping_cart"></use>
+                                            </svg> -->
+                                            </div>
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">African made boots</h4>
+                                                <p class="product-category">Men's Shoes</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$13</p>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3">
+                                    <div class="product__content mb-huge">
+                                        <img src="img/bag 2.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                        <div class="d-flex flex-column mr-auto">
+                                            <h4 class="product-name">Leather Bags</h4>
+                                            <p class="product-category">Bags</p>
+                                            <div class="product-icon-star">
+                                                <svg class="product__icon">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="product__icon">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="product__icon">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="product__icon">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                                <svg class="product__icon">
+                                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <p class="product-price">$26</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                    <div class="product__content mb-huge">
+                                        <img src="img/shoes 5.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">African swade shoes</h4>
+                                                <p class="product-category">Men's Shoes</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        <p class="product-price">$18</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                    <div class="product__content mb-huge">
+                                        <img src="img/watch 1.jpg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Men's watch</h4>
+                                                <p class="product-category">Watch</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        <p class="product-price">$6</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/sweats 1.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Wooven women's bag</h4>
+                                                <p class="product-category">Bag</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$10</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/bag 1.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Basket Hand Bag</h4>
+                                                <p class="product-category">Bag</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$4</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/shoes 7.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Classy Shoes</h4>
+                                                <p class="product-category">Women's Shoes</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$6</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/beauty tool 1.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Beauty tool s</h4>
+                                                <p class="product-category">Make-up</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$6</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/bracelet 2.jpg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Bracelet</h4>
+                                                <p class="product-category">Accessories</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$6</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/shirts 3.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Men's Shirt</h4>
+                                                <p class="product-category">Men's Clothings</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                                </div>
+                                            <p class="product-price">$14</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/heels 1.jpeg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Beautiful Women heels</h4>
+                                                <p class="product-category">Women's Shoes</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$34</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-3">
+                                        <div class="product__content mb-huge">
+                                        <img src="img/boots 1.jpg" alt="Heels" class="product__content-img" />
+                                        <div class="product__content-info">
+                                            <div class="d-flex flex-column mr-auto">
+                                                <h4 class="product-name">Men's boots</h4>
+                                                <p class="product-category">Men's Shoes</p>
+                                                <div class="product-icon-star">
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                    <svg class="product__icon">
+                                                        <use xlink:href="img/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <p class="product-price">$12</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                    
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row ">
+            <div class="col-lg-3">
+                <div class="footer__col">
+                    <h5 class="footer__heading">About Ajani</h5>
+                    <div class="footer__col-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                      Est perspiciatis consequuntu officiis aperiam sed explicabo 
+                    </div>
+                </div>
+            </div>
+        <div class="col-lg-3">
+            <div class="footer__col">
+                <h5 class="footer__heading">Help & Information</h5>
+                <div class="footer__col-content">
+                  <div class="footer__text">
+                    <ul class="list-unstyled">
+                      <li class="footer__list mb-1"><a href="#" class="footer__link">Track order</a></li>
+                      <li class="footer__list mb-1"><a href="#" class="footer__link">Delivery & Returns</a></li>
+                      <li class="footer__list mb-1"><a href="#" class="footer__link">FAQs</a></li>
+                      <li class="footer__list mb-1"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    </ul>
+                  </div>
+                  </div>
+             </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer__col">
+                <h5 class="footer__heading">LANGUAGE</h5>
+                <div class="footer__col-content ">
+                  <select class="custom-select footer__drop-language">
+                    <option selected>English</option>
+                    <option value="1">Spanish</option>
+                    <option value="2">Niger</option>
+                    <option value="3">Swahili</option>
+                  </select>
+                  <!-- <svg class="footer__icon">
+                    <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+                  </svg> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer__col">
+                <h5 class="footer__heading">CURRENCY</h5>
+                <div class="footer__col-content ">
+                  <select class="custom-select footer__drop-language">
+                    <option selected>GHC</option>
+                    <option value="1">USD</option>
+                    <option value="2">Pounds</option>
+                  </select>
+                  <!-- <svg class="footer__icon">
+                    <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+                  </svg> -->
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <hr class="footer__line my-4">
+      <div class="row copyright d-flex">
+        <p class="copyright__text ml-auto">&copy; All rights and reserved. Aljani</p>
+      </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/homepage.js"></script>
+  </body>
+</html>
+                   
