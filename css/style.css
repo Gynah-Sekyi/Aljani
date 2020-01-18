@@ -1,7 +1,7 @@
 /* Variable declarations */
 :root {
   --color-primary: #8c1b1b; /*rgba(140, 27, 27, 1)*/
-  --color-primary-light: #f2d7b6;
+  --color-primary-light: #f2d7b6; 
   --color-secondary: #f2a922; /*rgba(242, 169, 34, 1)*/
   --color-tertiary: #f2a0af;
 
@@ -17,7 +17,7 @@
   --color-grey-deeper: #4f4f4f;
   --color-grey: #444444;
 
-  --font-heading: "Poppins", sans-serif;
+  --font-heading: 'Poppins', sans-serif;;
   --font-text:'Muli', sans-serif;
 }
 
@@ -831,6 +831,30 @@ form.search{
   box-shadow: none;
   transform: translateY(3px);
 }
+.btn-size{
+  border-radius: 50%;
+  border: none;
+  padding:1rem;
+  font-size: 1.4rem;
+  font-weight:500;
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+
+  height: 5rem;
+  width: 5rem;
+  /* border-radius: 50%; */
+  /* padding: 1rem; */
+
+  transition: all .3s;
+}
+.btn-size:hover{
+  background-color: var(--color-primary);
+  color: var(--color-grey-light);
+}
+.btn-size.active{
+  background-color: var(--color-primary);
+  color: var(--color-grey-light);
+}
 /*Color*/
 .check-icon{
   height: 1.75rem;
@@ -873,4 +897,94 @@ form.search{
 }
 #color-8{
   background-color:var(--color-primary);
+}
+
+
+
+
+/*
+PRODUCT PAGE
+*/
+.row.no-gutters {
+  /* margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; */
+}
+/* .row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] 
+{
+  padding-right: 0;
+  padding-left: 0;
+} */
+
+
+.item{
+
+}
+.item__imgbox{
+  position: relative;
+}
+.item__imgbox .item__back-icon{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  height: 7rem;
+}
+.item__img{
+  /* height: 100%; */
+}
+.item__about{
+  
+}
+.item__about-header{
+  font-size: 2.118rem;
+  text-transform: capitalize;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  /* text-align: center; */
+  /* line-height: 2; */
+  padding: 3rem ;
+  padding-left: 5rem;
+  color: var(--color-secondary-text-deep);
+  background-color:var(--color-secondary);
+}
+.item__about-content{
+  margin: 1.2rem;
+}
+.item__about-box,
+.item__about-des,
+.item__about-select,
+.item__about-col,
+.item__about-btn{
+  margin-top: 2rem;
+}
+.item__about-muted{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  margin-bottom: 1rem;
+  display: block;
+}
+.item__about-name{
+  font-size: 2.734rem;
+  font-weight: 600;
+  color: #000000;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+
+}
+.item__about-price{
+  font-size: 2.734rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  display: block;
+  letter-spacing: 1px;
+}
+.item__about-destext{
+  color: #000000;
+  font-size: 1.3rem;
+  padding:0;
 }
